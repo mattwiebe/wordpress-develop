@@ -41,7 +41,6 @@ CustomizeImageCropper = Controller.Cropper.extend(/** @lends wp.media.controller
 		}
 
 		return wp.ajax.post( 'crop-image', {
-			wp_customize: 'on',
 			nonce: attachment.get( 'nonces' ).edit,
 			id: attachment.get( 'id' ),
 			context: control.id,
